@@ -14,12 +14,18 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
             integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Document</title>
+        <title>Front-end Starter Kit</title>
     </head>
 
     <body>
         <header>
             <h2 class="headTitle">Company</h2>
+            <button class="navBtn navBtnShow">
+                <i class="fa fa-bars"></i>
+            </button>
+            <button class="navBtn navBtnHide">
+                <i class="fa fa-close"></i>
+            </button>
             <ul class="navbar">
                 <li class="navItem" id="dropdown">
                     <a class="dropBtn">About</a>
@@ -156,6 +162,16 @@
                 required: "This field is required.",
                 email: "Invalid email address",
             });
+        </script>
+        <script>
+            $(".navBtnShow").click(function () {
+                $(".navbar").css('display', 'flex');
+                $(".navBtnHide").css('display', 'block');
+            })
+            $(".navBtnHide").click(function () {
+                $(".navbar").css('display', 'none');
+                $(".navBtnHide").css('display', 'none');
+            })
         </script>
     </body>
 
