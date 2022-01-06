@@ -83,28 +83,27 @@ header{
     display: flex;
     align-items: center;
 }
-/* .owl-nav{
-    transform: scale(3);
-} */
+.owl-nav{
+    margin: 0;
+}
+.owl-prev:hover, .owl-next:hover{
+    background: transparent !important;
+}
 .owl-prev{
     position: absolute;
     left: 2%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: white;
-}
-.owl-prev:hover, .owl-next:hover{
-    background: transparent !important;
-}
-.owl-prev span{
-    font-size: 1.25rem;
+    margin: 0 !important;
 }
 .owl-next{
     position: absolute;
-    left: 97%;
+    right: 2%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    margin: 0 !important;
 }
 
 .owl-dots{
