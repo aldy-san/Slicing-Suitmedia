@@ -99,7 +99,7 @@ header{
 }
 .owl-next{
     position: absolute;
-    right: 2%;
+    left: 98%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: white;
@@ -112,9 +112,18 @@ header{
     top: 90%;
     transform: translate(-50%,-50%);
 }
-.fa-2x{
+.navCustom{
     color: white;
-    transform: scale(2);
+    transform: scale(1);
+    border: 1px solid white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.navCustom:hover{
+    background-color: white;
+    color: black;
 }
 /* OUR VALUES */
 
@@ -308,9 +317,8 @@ footer i{
         position: relative;
         background-color: red;
     }
-    .fa-2x{
-        color: white;
-        transform: scale(0.5);
+    .navCustom{
+        display: none !important;
     }
     .carouselTitle{
         /* position: initial; */
