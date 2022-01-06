@@ -253,7 +253,6 @@ footer i{
     color: white;
     margin: 0 5px;
 }
-
 @media only screen and (max-width: 900px) {
     #ourValues, #contactUs{
         margin-top: 15px;

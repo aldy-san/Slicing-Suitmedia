@@ -172,6 +172,15 @@
                 $(".navbar").css('display', 'none');
                 $(".navBtnHide").css('display', 'none');
             })
+            $(window).resize(function () {
+                if ($(window).width() > 900) {
+                    $(".navbar").css('display', 'flex');
+                    $(".navBtnHide").css('display', 'none');
+                } else {
+                    $(".navbar").css('display', 'none');
+                    $(".navBtnHide").css('display', 'none');
+                }
+            });
         </script>
     </body>
 
